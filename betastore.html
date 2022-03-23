@@ -2,7 +2,43 @@
 
 <head>
     <title>Monumenta Official Webstore!</title>
-    <script></script>
+    <script>
+        function button1() {
+            document.getElementById("1out1").innerHTML = parseFloat(document.getElementById("1out1").innerHTML) + 1
+            document.getElementById("1out2").innerHTML = parseFloat(document.getElementById("1out2").innerHTML) + 2.75
+            document.getElementById("amount").innerHTML = parseFloat(document.getElementById("amount").innerHTML) + 1
+            document.getElementById("cost").innerHTML = parseFloat(document.getElementById("cost").innerHTML) + 2.75
+        }
+
+        function button2() {
+            document.getElementById("2out1").innerHTML = parseFloat(document.getElementById("2out1").innerHTML) + 1
+            document.getElementById("2out2").innerHTML = parseFloat(document.getElementById("2out2").innerHTML) + 5.5
+            document.getElementById("amount").innerHTML = parseFloat(document.getElementById("amount").innerHTML) + 1
+            document.getElementById("cost").innerHTML = parseFloat(document.getElementById("cost").innerHTML) + 5.5
+        }
+        
+        function button5() {
+            document.getElementById("5out1").innerHTML = parseFloat(document.getElementById("5out1").innerHTML) + 1
+            document.getElementById("5out2").innerHTML = parseFloat(document.getElementById("5out2").innerHTML) + 12.375
+            document.getElementById("amount").innerHTML = parseFloat(document.getElementById("amount").innerHTML) + 1
+            document.getElementById("cost").innerHTML = parseFloat(document.getElementById("cost").innerHTML) + 12.375
+        }
+
+        function button10() {
+            document.getElementById("10out1").innerHTML = parseFloat(document.getElementById("10out1").innerHTML) + 1
+            document.getElementById("10out2").innerHTML = parseFloat(document.getElementById("10out2").innerHTML) + 30.25
+            document.getElementById("amount").innerHTML = parseFloat(document.getElementById("amount").innerHTML) + 1
+            document.getElementById("cost").innerHTML = parseFloat(document.getElementById("cost").innerHTML) + 30.25
+        }
+
+        function button25() {
+            document.getElementById("25out1").innerHTML = parseFloat(document.getElementById("25out1").innerHTML) + 1
+            document.getElementById("25out2").innerHTML = parseFloat(document.getElementById("25out2").innerHTML) + 55
+            document.getElementById("amount").innerHTML = parseFloat(document.getElementById("amount").innerHTML) + 1
+            document.getElementById("cost").innerHTML = parseFloat(document.getElementById("cost").innerHTML) + 55
+        }
+
+    </script>
     <link rel="icon" type="image/x-icon" href="img/money.png">
 </head>
 
@@ -48,7 +84,7 @@
                 <tr>
                     <td><img src="img/box.png" style="width:100px;"></td>
                     <td>ONE LOOTBOX<br>($2.75 per)</td>
-                    <td><button id="1">PRESS</button></td>
+                    <td><button onclick="button1()">PRESS</button></td>
                     <td>
                         <div id="1out1">0</div>
                     </td>
@@ -59,7 +95,7 @@
                 <tr>
                     <td><img src="img/twobox.png" style="width:100px;"></td>
                     <td>TWO LOOTBOX<br>($5.5 per)</td>
-                    <td><button id="2">PRESS</button></td>
+                    <td><button onclick="button2()">PRESS</button></td>
                     <td>
                         <div id="2out1">0</div>
                     </td>
@@ -70,7 +106,7 @@
                 <tr>
                     <td><img src="img/fivebox.png" style="width:100px;"></td>
                     <td>FIVE LOOTBOX<br>($12.375 per) (10%!!)</td>
-                    <td><button id="2">PRESS</button></td>
+                    <td><button onclick="button5()">PRESS</button></td>
                     <td>
                         <div id="5out1">0</div>
                     </td>
@@ -81,7 +117,7 @@
                 <tr>
                     <td><img src="img/tenbox.png" style="width:100px;"></td>
                     <td>TEN LOOTBOX<br>($30.25 per) (10%!!)</td>
-                    <td><button id="10">PRESS</button></td>
+                    <td><button onclick="button10()">PRESS</button></td>
                     <td>
                         <div id="10out1">0</div>
                     </td>
@@ -92,7 +128,7 @@
                 <tr>
                     <td><img src="img/twentyfivebox.png" style="width:100px;"></td>
                     <td>TWENTYFIVE LOOTBOX<br>($55 per) (BEST DEAL!!)</td>
-                    <td><button id="25">PRESS</button></td>
+                    <td><button onclick="button25()">PRESS</button></td>
                     <td>
                         <div id="25out1">0</div>
                     </td>
