@@ -32,10 +32,11 @@
         }
 
         function button25() {
-            document.getElementById("25out1").innerHTML = parseFloat(document.getElementById("25out1").innerHTML) + 1
-            document.getElementById("25out2").innerHTML = parseFloat(document.getElementById("25out2").innerHTML) + 55
-            document.getElementById("amount").innerHTML = parseFloat(document.getElementById("amount").innerHTML) + 1
-            document.getElementById("cost").innerHTML = parseFloat(document.getElementById("cost").innerHTML) + 55
+            document.getElementById("25out1").innerHTML = parseFloat(document.getElementById("25out1").innerHTML) + parseFloat(document.getElementById("cost25").innerHTML)
+            document.getElementById("25out2").innerHTML = parseFloat(document.getElementById("25out2").innerHTML) + parseFloat(document.getElementById("cost25").innerHTML)
+            document.getElementById("amount").innerHTML = parseFloat(document.getElementById("amount").innerHTML) + parseFloat(document.getElementById("cost25").innerHTML)
+            document.getElementById("cost").innerHTML = parseFloat(document.getElementById("cost").innerHTML) + parseFloat(document.getElementById("cost25").innerHTML)
+            document.getElementById("cost25").innerHTML = parseInt(document.getElementById("cost25").innerHTML) + 1
         }
 
     </script>
@@ -127,7 +128,7 @@
                 </tr>
                 <tr>
                     <td><img src="img/twentyfivebox.png" style="width:100px;"></td>
-                    <td>TWENTYFIVE LOOTBOX<br>($55 per) (BEST DEAL!!)</td>
+                    <td>TWENTYFIVE LOOTBOX<br>($<span id="cost25">55</span> per) (BEST DEAL!!)</td>
                     <td><button onclick="button25()">PRESS</button></td>
                     <td>
                         <div id="25out1">0</div>
